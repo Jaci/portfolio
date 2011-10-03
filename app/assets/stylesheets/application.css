@@ -1202,7 +1202,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   margin-left: -20px;
   color: #000000;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 1;
 }
 .topbar form {
@@ -1275,7 +1275,8 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 .topbar ul li {
   display: block;
   float: left;
-  font-size: 13px;
+  font-size: 12px;
+  
 }
 .topbar ul li a {
   display: block;
@@ -1283,6 +1284,8 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   padding: 10px 10px 11px;
   line-height: 19px;
   text-decoration: none;
+  color: #444;
+
 }
 .topbar ul li a:hover {
   color: #fff;
