@@ -121,6 +121,13 @@ aside {
 .container:after {
   clear: both;
 }
+.container-dark{
+  width: 100%;
+  height: 600px;
+  margin: 0px 0px;
+  background-color: #000000;
+  zoom: 1;
+}
 /*
  * Scaffolding
  * Basic and global styles for generating a grid system, structural layout, and page templates
