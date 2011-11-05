@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  masters_school: MyString
+  masters_degree: MyString
+  masters_graduation_date: MyString
+  masters_GPA: MyString
+  undergrad_school: MyString
+  undergrad_degree: MyString
+  undergrad_graduation_date: MyString
+  undergrad_GPA: MyString
+  school_three: MyString
+  school_four: MyString
+  degree_three: MyString
+  degree_four: MyString
+  phone: MyString
+  phone_two: MyString
+  email: MyString
+  email_two: MyString
+  address_one: MyString
+  address_two: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  skill_one: MyString
+  skill_two: MyString
+  skill_three: MyString
+  skill_four: MyString
+  skill_five: MyString
+  skill_six: MyString
+
+two:
+  name: MyString
+  masters_school: MyString
+  masters_degree: MyString
+  masters_graduation_date: MyString
+  masters_GPA: MyString
+  undergrad_school: MyString
+  undergrad_degree: MyString
+  undergrad_graduation_date: MyString
+  undergrad_GPA: MyString
+  school_three: MyString
+  school_four: MyString
+  degree_three: MyString
+  degree_four: MyString
+  phone: MyString
+  phone_two: MyString
+  email: MyString
+  email_two: MyString
+  address_one: MyString
+  address_two: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  skill_one: MyString
+  skill_two: MyString
+  skill_three: MyString
+  skill_four: MyString
+  skill_five: MyString
+  skill_six: MyString

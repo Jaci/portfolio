@@ -1,5 +1,9 @@
 Portfolio::Application.routes.draw do
   
+  resources :experiences
+
+  resources :resumes
+
   resources :goals
 
   resources :projects

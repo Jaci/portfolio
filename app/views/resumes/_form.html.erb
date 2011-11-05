@@ -1,0 +1,129 @@
+<%= form_for(@resume) do |f| %>
+  <% if @resume.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@resume.errors.count, "error") %> prohibited this resume from being saved:</h2>
+
+      <ul>
+      <% @resume.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :masters_school %><br />
+    <%= f.text_field :masters_school %>
+  </div>
+  <div class="field">
+    <%= f.label :masters_degree %><br />
+    <%= f.text_field :masters_degree %>
+  </div>
+  <div class="field">
+    <%= f.label :masters_graduation_date %><br />
+    <%= f.text_field :masters_graduation_date %>
+  </div>
+  <div class="field">
+    <%= f.label :masters_GPA %><br />
+    <%= f.text_field :masters_GPA %>
+  </div>
+  <div class="field">
+    <%= f.label :undergrad_school %><br />
+    <%= f.text_field :undergrad_school %>
+  </div>
+  <div class="field">
+    <%= f.label :undergrad_degree %><br />
+    <%= f.text_field :undergrad_degree %>
+  </div>
+  <div class="field">
+    <%= f.label :undergrad_graduation_date %><br />
+    <%= f.text_field :undergrad_graduation_date %>
+  </div>
+  <div class="field">
+    <%= f.label :undergrad_GPA %><br />
+    <%= f.text_field :undergrad_GPA %>
+  </div>
+  <div class="field">
+    <%= f.label :school_three %><br />
+    <%= f.text_field :school_three %>
+  </div>
+  <div class="field">
+    <%= f.label :school_four %><br />
+    <%= f.text_field :school_four %>
+  </div>
+  <div class="field">
+    <%= f.label :degree_three %><br />
+    <%= f.text_field :degree_three %>
+  </div>
+  <div class="field">
+    <%= f.label :degree_four %><br />
+    <%= f.text_field :degree_four %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_two %><br />
+    <%= f.text_field :phone_two %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :email_two %><br />
+    <%= f.text_field :email_two %>
+  </div>
+  <div class="field">
+    <%= f.label :address_one %><br />
+    <%= f.text_field :address_one %>
+  </div>
+  <div class="field">
+    <%= f.label :address_two %><br />
+    <%= f.text_field :address_two %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :skill_one %><br />
+    <%= f.text_field :skill_one %>
+  </div>
+  <div class="field">
+    <%= f.label :skill_two %><br />
+    <%= f.text_field :skill_two %>
+  </div>
+  <div class="field">
+    <%= f.label :skill_three %><br />
+    <%= f.text_field :skill_three %>
+  </div>
+  <div class="field">
+    <%= f.label :skill_four %><br />
+    <%= f.text_field :skill_four %>
+  </div>
+  <div class="field">
+    <%= f.label :skill_five %><br />
+    <%= f.text_field :skill_five %>
+  </div>
+  <div class="field">
+    <%= f.label :skill_six %><br />
+    <%= f.text_field :skill_six %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

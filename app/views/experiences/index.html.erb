@@ -1,0 +1,49 @@
+<h1>Listing experiences</h1>
+
+<table>
+  <tr>
+    <th>Employer</th>
+    <th>Employer city</th>
+    <th>Employer state</th>
+    <th>Job title</th>
+    <th>Employed from</th>
+    <th>Employed to</th>
+    <th>Job description one</th>
+    <th>Job description two</th>
+    <th>Job description three</th>
+    <th>Job description four</th>
+    <th>Job description five</th>
+    <th>Job description six</th>
+    <th>Job description seven</th>
+    <th>Job description eight</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @experiences.each do |experience| %>
+  <tr>
+    <td><%= experience.employer %></td>
+    <td><%= experience.employer_city %></td>
+    <td><%= experience.employer_state %></td>
+    <td><%= experience.job_title %></td>
+    <td><%= experience.employed_from %></td>
+    <td><%= experience.employed_to %></td>
+    <td><%= experience.job_description_one %></td>
+    <td><%= experience.job_description_two %></td>
+    <td><%= experience.job_description_three %></td>
+    <td><%= experience.job_description_four %></td>
+    <td><%= experience.job_description_five %></td>
+    <td><%= experience.job_description_six %></td>
+    <td><%= experience.job_description_seven %></td>
+    <td><%= experience.job_description_eight %></td>
+    <td><%= link_to 'Show', experience %></td>
+    <td><%= link_to 'Edit', edit_experience_path(experience) %></td>
+    <td><%= link_to 'Destroy', experience, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Experience', new_experience_path %>

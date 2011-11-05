@@ -1,0 +1,73 @@
+<%= form_for(@experience) do |f| %>
+  <% if @experience.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@experience.errors.count, "error") %> prohibited this experience from being saved:</h2>
+
+      <ul>
+      <% @experience.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :employer %><br />
+    <%= f.text_field :employer %>
+  </div>
+  <div class="field">
+    <%= f.label :employer_city %><br />
+    <%= f.text_field :employer_city %>
+  </div>
+  <div class="field">
+    <%= f.label :employer_state %><br />
+    <%= f.text_field :employer_state %>
+  </div>
+  <div class="field">
+    <%= f.label :job_title %><br />
+    <%= f.text_field :job_title %>
+  </div>
+  <div class="field">
+    <%= f.label :employed_from %><br />
+    <%= f.datetime_select :employed_from %>
+  </div>
+  <div class="field">
+    <%= f.label :employed_to %><br />
+    <%= f.datetime_select :employed_to %>
+  </div>
+  <div class="field">
+    <%= f.label :job_description_one %><br />
+    <%= f.text_field :job_description_one %>
+  </div>
+  <div class="field">
+    <%= f.label :job_description_two %><br />
+    <%= f.text_field :job_description_two %>
+  </div>
+  <div class="field">
+    <%= f.label :job_description_three %><br />
+    <%= f.text_field :job_description_three %>
+  </div>
+  <div class="field">
+    <%= f.label :job_description_four %><br />
+    <%= f.text_field :job_description_four %>
+  </div>
+  <div class="field">
+    <%= f.label :job_description_five %><br />
+    <%= f.text_field :job_description_five %>
+  </div>
+  <div class="field">
+    <%= f.label :job_description_six %><br />
+    <%= f.text_field :job_description_six %>
+  </div>
+  <div class="field">
+    <%= f.label :job_description_seven %><br />
+    <%= f.text_field :job_description_seven %>
+  </div>
+  <div class="field">
+    <%= f.label :job_description_eight %><br />
+    <%= f.text_field :job_description_eight %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

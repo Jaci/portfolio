@@ -1275,7 +1275,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   float: right;
   margin: 10px;
   display: block;
-  margin: 0 10px 0 0;
+  margin: 0 95px 0 0;
   position: relative;
 
 }
@@ -1295,7 +1295,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 
 }
 .topbar ul li a:hover {
-  color: #fff;
+  color: none;
   text-decoration: none;
 }
 .topbar ul li.active a {

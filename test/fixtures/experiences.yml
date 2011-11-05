@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  employer: MyString
+  employer_city: MyString
+  employer_state: MyString
+  job_title: MyString
+  employed_from: 2011-11-05 16:42:02
+  employed_to: 2011-11-05 16:42:02
+  job_description_one: MyString
+  job_description_two: MyString
+  job_description_three: MyString
+  job_description_four: MyString
+  job_description_five: MyString
+  job_description_six: MyString
+  job_description_seven: MyString
+  job_description_eight: MyString
+
+two:
+  employer: MyString
+  employer_city: MyString
+  employer_state: MyString
+  job_title: MyString
+  employed_from: 2011-11-05 16:42:02
+  employed_to: 2011-11-05 16:42:02
+  job_description_one: MyString
+  job_description_two: MyString
+  job_description_three: MyString
+  job_description_four: MyString
+  job_description_five: MyString
+  job_description_six: MyString
+  job_description_seven: MyString
+  job_description_eight: MyString
