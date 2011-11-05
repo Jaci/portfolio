@@ -8,6 +8,7 @@ gem 'paperclip'
 gem 'pg'
 gem 'will_paginate'
 gem 'sqlite3'
+gem 'hassle'
 
 group :production do
   gem 'aws-s3', :require => 'aws/s3'
