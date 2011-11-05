@@ -1150,17 +1150,17 @@ table .headerSortUp.purple, table .headerSortDown.purple {
  * Repeatable UI elements outside the base styles provided from the scaffolding
  * ---------------------------------------------------------------------------- */
 .topbar {
-  background: #222;
-  background-color: #ffcc00;
+  background: #4daeae;
+  background-color: #4daeae;
   background-repeat: repeat-x;
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffe38d), to(#ffcc00));
-  background-image: -moz-linear-gradient(#ffe38d, #ffd040);
-  background-image: -ms-linear-gradient(#ffe38d, #ffd040);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffe38d), color-stop(100%, #ffcc00));
-  background-image: -webkit-linear-gradient(#ffe38d, #ffcc00);
-  background-image: -o-linear-gradient(#ffe38d, #ffcc00);
-  background-image: linear-gradient(#ffe38d, #ffcc00);
-  border-bottom-color: #ffcc00;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#4daeae), to(#4daeae));
+  background-image: -moz-linear-gradient(#4daeae, #4daeae);
+  background-image: -ms-linear-gradient(#4daeae, #4daeae);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4daeae), color-stop(100%, #4daeae));
+  background-image: -webkit-linear-gradient(#4daeae, #4daeae);
+  background-image: -o-linear-gradient(#4daeae, #4daeae);
+  background-image: linear-gradient(#4daeae, #4daeae);
+  border-bottom-color: #4daeae;
   height: 40px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -1199,8 +1199,8 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   text-decoration: none;
 }
 .topbar h3 {
-  position: relative;
-  margin-left: -75px;
+  position: absolute;
+  margin-left: 10%;
 }
 .topbar h3 a {
   float: left;
@@ -1268,8 +1268,8 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 .topbar ul {
   display: block;
   float: left;
-  margin: 0 10px 0 0;
-  position: relative;
+  margin: 0 10px 0 20%;
+  position: absolute;
 }
 .topbar ul.secondary-nav {
   float: right;

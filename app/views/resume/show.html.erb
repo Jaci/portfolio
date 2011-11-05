@@ -1,0 +1,84 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Start date:</b>
+  <%= d= @resume.start_date 
+	  d.to_formatted_s(:month_and_year) %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= d= @resume.end_date 
+	  d.to_formatted_s(:month_and_year) %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @resume.location %>
+</p>
+
+<p>
+  <b>Employer:</b>
+  <%= @resume.employer %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @resume.title %>
+</p>
+
+<p>
+  <b>Responsibilities one:</b>
+  <%= @resume.responsibilities_one %>
+</p>
+
+<p>
+  <b>Responsibilities two:</b>
+  <%= @resume.responsibilities_two %>
+</p>
+
+<p>
+  <b>Responsibilities three:</b>
+  <%= @resume.responsibilities_three %>
+</p>
+
+<p>
+  <b>Responsibilities four:</b>
+  <%= @resume.responsibilities_four %>
+</p>
+
+<p>
+  <b>Responsibilities five:</b>
+  <%= @resume.responsibilities_five %>
+</p>
+
+<p>
+  <b>Responsibilities six:</b>
+  <%= @resume.responsibilities_six %>
+</p>
+
+<p>
+  <b>Responsibilities seven:</b>
+  <%= @resume.responsibilities_seven %>
+</p>
+
+<p>
+  <b>Responsibilities eight:</b>
+  <%= @resume.responsibilities_eight %>
+</p>
+
+<p>
+  <b>Responsibilities nine:</b>
+  <%= @resume.responsibilities_nine %>
+</p>
+
+<p>
+  <b>Responsibilities ten:</b>
+  <%= @resume.responsibilities_ten %>
+</p>
+
+
+<%= link_to 'Edit', edit_resume_path(@resume) %> |
+<%= link_to 'Back', resume_path %>

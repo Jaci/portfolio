@@ -1,0 +1,78 @@
+<%= form_for(@resume) do |f| %>
+  <% if @resume.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@resume.errors.count, "error") %> prohibited this resume from being saved:</h2>
+
+      <ul>
+      <% @resume.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :start_date %><br />
+	<%= f.date_select("start_date", :start_year => 1950, :use_month_names => ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], :discard_day => true, :include_blank => true) %>
+
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br />
+	<%= f.date_select("end_date", :start_year => 1950, :use_month_names => ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], :discard_day => true, :include_blank => true) %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :employer %><br />
+    <%= f.text_field :employer %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_one %><br />
+    <%= f.text_field :responsibilities_one %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_two %><br />
+    <%= f.text_field :responsibilities_two %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_three %><br />
+    <%= f.text_field :responsibilities_three %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_four %><br />
+    <%= f.text_field :responsibilities_four %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_five %><br />
+    <%= f.text_field :responsibilities_five %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_six %><br />
+    <%= f.text_field :responsibilities_six %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_seven %><br />
+    <%= f.text_field :responsibilities_seven %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_eight %><br />
+    <%= f.text_field :responsibilities_eight %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_nine %><br />
+    <%= f.text_field :responsibilities_nine %>
+  </div>
+  <div class="field">
+    <%= f.label :responsibilities_ten %><br />
+    <%= f.text_field :responsibilities_ten %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

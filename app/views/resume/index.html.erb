@@ -1,0 +1,51 @@
+<h1>Listing Experience</h1>
+
+<table>
+  <tr>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Location</th>
+    <th>Employer</th>
+    <th>Title</th>
+    <th>Responsibilities one</th>
+    <th>Responsibilities two</th>
+    <th>Responsibilities three</th>
+    <th>Responsibilities four</th>
+    <th>Responsibilities five</th>
+    <th>Responsibilities six</th>
+    <th>Responsibilities seven</th>
+    <th>Responsibilities eight</th>
+    <th>Responsibilities nine</th>
+    <th>Responsibilities ten</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @resume.each do |resume| %>
+  <tr>
+    <td><%= resume.start_date %></td>
+    <td><%= resume.end_date %></td>
+    <td><%= resume.location %></td>
+    <td><%= resume.employer %></td>
+    <td><%= resume.title %></td>
+    <td><%= resume.responsibilities_one %></td>
+    <td><%= resume.responsibilities_two %></td>
+    <td><%= resume.responsibilities_three %></td>
+    <td><%= resume.responsibilities_four %></td>
+    <td><%= resume.responsibilities_five %></td>
+    <td><%= resume.responsibilities_six %></td>
+    <td><%= resume.responsibilities_seven %></td>
+    <td><%= resume.responsibilities_eight %></td>
+    <td><%= resume.responsibilities_nine %></td>
+    <td><%= resume.responsibilities_ten %></td>
+    <td><%= link_to 'Show', resume %></td>
+    <td><%= link_to 'Edit', edit_resume_path(resume) %></td>
+    <td><%= link_to 'Destroy', resume, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New resume', new_resume_path %>

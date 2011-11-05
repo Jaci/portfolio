@@ -11,12 +11,47 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111002231836) do
+ActiveRecord::Schema.define(:version => 20111104021107) do
 
   create_table "blogs", :force => true do |t|
     t.string   "post_title"
     t.datetime "created_on"
     t.string   "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "goals", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pages", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "projects", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "resume", :force => true do |t|
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.string   "location"
+    t.string   "employer"
+    t.string   "title"
+    t.string   "responsibilities_one"
+    t.string   "responsibilities_two"
+    t.string   "responsibilities_three"
+    t.string   "responsibilities_four"
+    t.string   "responsibilities_five"
+    t.string   "responsibilities_six"
+    t.string   "responsibilities_seven"
+    t.string   "responsibilities_eight"
+    t.string   "responsibilities_nine"
+    t.string   "responsibilities_ten"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
