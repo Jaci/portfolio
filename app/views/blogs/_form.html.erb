@@ -1,3 +1,4 @@
+<div class="container" >
 <%= form_for(@blog) do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
@@ -10,20 +11,17 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <div class="profile span4 offset4" >
     <%= f.label :post_title %><br />
     <%= f.text_field :post_title %>
   </div>
-  <div class="field">
-    <%= f.label :created_on %><br />
-    <%= f.datetime_select :created_on %>
-  </div>
-  <div class="field">
+<br>
+  <div class="profile span4 offset4" >
     <%= f.label :text %><br />
-    <%= f.text_field :text %>
+    <%= f.text_area :text %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+<div>

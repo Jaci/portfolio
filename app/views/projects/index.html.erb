@@ -1,21 +1,24 @@
 <h1>Listing projects</h1>
-
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class ="container-dark">
 
 <% @projects.each do |project| %>
+
+<p id="notice"><%= notice %></p>
+		<div class="row">
+			<br>
+			<br>
+	    <div class="profile span3 offset4" >
+	      <img src= "http://placehold.it/150x200/ffffff&text=250+x+500+...+SMALL+PROJECT+IMAGE" width= "150" height= "200"/>	     
+	    </div>
+		<div class="profile span6" >
+	      <img src="http://placehold.it/500x200/ffffff&text=500+x+200+...+specific+project+info+text+box" alt="" />
+	    </div>		  
+	</div>
   <tr>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Show', project %></td><br>
+    <td><%= link_to 'Edit', edit_project_path(project) %></td><br>
+    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td><br>
   </tr>
 <% end %>
-</table>
-
-<br />
-
 <%= link_to 'New Project', new_project_path %>
+</div>

@@ -1193,7 +1193,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .topbar a:hover, .topbar ul li.active a {
-  background-color: #fff;
+  background-color: none;
   background-color: rgba(255, 255, 255, 0.05);
   color: #ffffff;
   text-decoration: none;
@@ -1299,7 +1299,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   text-decoration: none;
 }
 .topbar ul li.active a {
-  background-color: #444;
+  background-color: none;
 }
 .topbar ul.primary-nav li ul {
   left: 0;
@@ -1332,8 +1332,6 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   background-color: rgba(255, 255, 255, 0.1);
   *background-color: #444;
   /* IE6-7 */
-
-  color: #fff;
 }
 .topbar ul li.menu.open ul {
   display: block;
