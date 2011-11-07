@@ -128,6 +128,13 @@ aside {
   background-color: #000000;
   zoom: 1;
 }
+.container-dark-extend{
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px;
+  background-color: #000000;
+  zoom: 1;
+}
 /*
  * Scaffolding
  * Basic and global styles for generating a grid system, structural layout, and page templates

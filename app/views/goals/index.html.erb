@@ -5,14 +5,13 @@ background-color:#ffffff;
 
 </style>
 
-		<div class ="container-dark">
+		<div class ="container-dark-extended">
 			<br>
 			<br>
 			<% @goals.each do |goal| %>
 			<div class= "row">				
-			<div class="span9 offset3" background-color= "white">
-		    
-	   	  		<h1><%= goal.goal_header %></h1>
+			<div class="span9 offset4">
+		    	<h1><%= goal.goal_header %></h1>
 					<table>
 					<tr>
 		    			<td><%= link_to 'Show', goal %></td>
@@ -24,7 +23,7 @@ background-color:#ffffff;
 			</div>
 			<div class= "row">
 			
-			<div class= "span9 offset3">
+			<div class= "span9 offset4">
 				<h3><%= raw simple_format(goal.goal) %></h3>
 			</div>
 			</div>
