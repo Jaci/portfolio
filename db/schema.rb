@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111107033932) do
+ActiveRecord::Schema.define(:version => 20111107050311) do
 
   create_table "blogs", :force => true do |t|
     t.string   "post_title"
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(:version => 20111107033932) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "goal_header"
-    t.string   "goal"
+    t.text     "goal",        :limit => 255
   end
 
   create_table "pages", :force => true do |t|
@@ -56,8 +56,8 @@ ActiveRecord::Schema.define(:version => 20111107033932) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "project_title"
-    t.string   "project_summary"
-    t.string   "project_detail"
+    t.text     "project_summary",   :limit => 255
+    t.text     "project_detail",    :limit => 255
     t.string   "project_pic_small"
     t.string   "project_pic_large"
   end
