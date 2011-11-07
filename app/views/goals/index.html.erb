@@ -4,7 +4,7 @@
 			<br>
 			<% @goals.each do |goal| %>
 			<div class= "row">				
-			<div class="span4 offset3" >
+			<div class="span9 offset3" >
 		    
 	   	  		<h1><%= goal.goal_header %></h1>
 					<table>
@@ -18,8 +18,8 @@
 			</div>
 			<div class= "row">
 			
-			<div class= "span4 offset3">
-				<h3><%= goal.goal %></h3>
+			<div class= "span9 offset3">
+				<h3><%= raw simple_format(goal.goal) %></h3>
 			</div>
 			</div>
 		<br>
