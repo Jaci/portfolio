@@ -10,7 +10,15 @@
       </ul>
     </div>
   <% end %>
-
+ <div class="profile span4 offset4" >
+    <%= f.label :goal_header %><br />
+    <%= f.text_field :goal_header %>
+  </div>
+<br>
+  <div class="profile span4 offset4" >
+    <%= f.label :goal %><br />
+    <%= f.text_area :goal %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -11,6 +11,27 @@
     </div>
   <% end %>
 
+ <div class="profile span4 offset4" >
+    <%= f.label :project_title %><br />
+    <%= f.text_field :project_title %>
+  </div>
+<br>
+  <div class="profile span4 offset4" >
+    <%= f.label :project_summary %><br />
+    <%= f.text_area :project_summary %>
+  </div>
+  <div class="profile span4 offset4" >
+    <%= f.label :project_detail %><br />
+    <%= f.text_area :project_detail %>
+  </div>
+  <div class="profile span4 offset4" >
+    <%= f.label :project_pic_small %><br />
+    <%= f.text_area :project_pic_small %>
+  </div>
+  <div class="profile span4 offset4" >
+    <%= f.label :project_pic_large %><br />
+    <%= f.text_area :project_pic_large %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
