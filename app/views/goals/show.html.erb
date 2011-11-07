@@ -1,5 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-
+<div class ="container">
+			<br>
+			<br>
+	    <div class="profile span4 offset5" >
+	      <width= "250" height= "500"/>
+	   	  <h1><%= @goal.goal_header %></h1>
+	    </div>
+		<br>
+		<br>
+		<div class="profile span6 offset5" >
+		  <h3> <%= @goal.goal %> </h3>
+	    </div>
+		  
+	</div>
+	</div>
 <%= link_to 'Edit', edit_goal_path(@goal) %> |
 <%= link_to 'Back', goals_path %>

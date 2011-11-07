@@ -1,20 +1,28 @@
-<h1>Listing goals</h1>
-
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @goals.each do |goal| %>
-  <tr>
-    <td><%= link_to 'Show', goal %></td>
-    <td><%= link_to 'Edit', edit_goal_path(goal) %></td>
-    <td><%= link_to 'Destroy', goal, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+<div class ="container">
+			<br>
+			<br>
+	    <div class="profile span4 offset5" >
+	      <width= "250" height= "500"/>
+	   	  <h1><%= goal.goal_header %></h1>
+		<table>
+		<tr>
+		    <td><%= link_to 'Show', goal %></td>
+		    <td><%= link_to 'Edit', edit_goal_path(goal) %></td>
+		    <td><%= link_to 'Destroy', goal, confirm: 'Are you sure?', method: :delete %></td>
+		  </tr>
+		</table>
+		
+	    </div>
+	<br>		
+		<div class="profile span6 offset5" >
+		<h3>  <%= goal.goal %> </h3>
+	    </div>
+		  
+	</div>
+  
 <% end %>
-</table>
 
 <br />
 
