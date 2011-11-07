@@ -9,6 +9,8 @@ Portfolio::Application.routes.draw do
   resources :projects
 
   resources :pages
+    match "resume_page" => "pages#resume_page"
+    match "contact_page" => "pages#contact_page"
 
   resources :resume
 

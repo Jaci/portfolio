@@ -9,7 +9,13 @@ class PagesController < ApplicationController
       format.json { render json: @pages }
     end
   end
-
+ 
+  def resume_page
+  end
+  
+  def contact_page
+  end
+  
   # GET /pages/1
   # GET /pages/1.json
   def show
@@ -20,9 +26,10 @@ class PagesController < ApplicationController
       format.json { render json: @page }
     end
   end
+  
 
   # GET /pages/new
-  # GET /pages/new.json
+  # GET /pages/new.json 
   def new
     @page = Page.new
 
