@@ -1,23 +1,26 @@
+<style type= "text/css">
+.span9 {
+background-color:#ffffff;
+}
+</style>
+
 <p id="notice"><%= notice %></p>
 
-<div class="container">
+<div class="container-dark">
+		<br>
+		<br>
 	<div class= "row">
-			<br>
-			<br>
-	    <div class="profile span6 offset3" >
-	      <width= "250" height= "500"/>
-	   	  <h1><%= @goal.goal_header %></h1>
+	    <div class="span9 offset3">
+	   	<h1><%=@goal.goal_header %></h1>
 	    </div>
 		</div>
 	<div class= "row">
-		<div class="profile span6 offset3" >
+		<div class="span9 offset3" >
 		  <h3> <%=raw simple_format(@goal.goal) %> </h3>
 	    </div>
 		</div>
-	</div>
-	</div>
 	<div class= "row">
-	<div class= "profile offset5">
+	<div class= "span9 offset3">
 <%= link_to 'Edit', edit_goal_path(@goal) %> |
 <%= link_to 'Back', goals_path %>
 </div>
