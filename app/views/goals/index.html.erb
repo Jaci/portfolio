@@ -1,36 +1,32 @@
 <style type= "text/css">
 .span9 {
 background-color:#ffffff;
+margin: 0px 0px 0px 0px;
 }
 
 </style>
 
-		<div class ="container-dark-extend">
+		<div class ="container">
 			<br>
 			<br>
 			<% @goals.each do |goal| %>
-			<div class= "row">				
-			<div class="span9 offset4">
+			<div class= "row">								
+			<div class="span9 offset3">
 		    	<h1><%= goal.goal_header %></h1>
-					<table>
+					<!-- <table>
 					<tr>
 		    			<td><%= link_to 'Show', goal %></td>
 		    			<td><%= link_to 'Edit', edit_goal_path(goal) %></td>
 		    			<td><%= link_to 'Destroy', goal, confirm: 'Are you sure?', :method => 'destroy' %></td>
 		  			</tr>
-					</table>		
-	    	</div>
-			</div>
-			<div class= "row">
-			
-			<div class= "span9 offset4">
-				<h3><%= raw simple_format(goal.goal) %></h3>
+					</table> -->		
+	    		<br>
+					<h3><%= raw simple_format(goal.goal) %></h3>
 			</div>
 			</div>
 		<br>
-		<br> 
 <% end %>
-<div class= "profile span6 offset4">
+<br>
 <%= link_to 'New Goal', new_goal_path %>
 </div>
 </div>
