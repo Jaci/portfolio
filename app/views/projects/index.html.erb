@@ -6,15 +6,17 @@
 <p id="notice"><%= notice %></p>
 		<div class="row">
 			<br>
-	    <div class="profile span3 offset2" >
-	      <img src= "http://placehold.it/150x200/ffffff&text=250+x+500+...+SMALL+PROJECT+IMAGE" width= "170" height= "200"/>	     
+	    <div class="profile span3 offset2" width= "170" height= "200" >
+	       	<%= image_tag @project.project_pic_small.url %>	     
 	    </div>
-		<div class="profile span6" >
-	      <img src="http://placehold.it/500x200/ffffff&text=500+x+200+...+specific+project+info+text+box" alt="" />
+		<div class="profile span6" width= "500" height= "200" >
+			<%= raw simple_format(project.project_summary) %>  
+			<br>
+			<%= link_to 'See Project Details', project %>	
 	    </div>		  
 	</div>
   <tr>
-    <td><%= link_to 'Show', project %></td><br>
+    <td></td><br>
     <td><%= link_to 'Edit', edit_project_path(project) %></td><br>
     <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td><br>
   </tr>

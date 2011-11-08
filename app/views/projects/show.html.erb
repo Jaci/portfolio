@@ -4,12 +4,12 @@
 		<div class="row">
 			<br>
 			<br>
-	    <div class="profile span4 offset2" >
-	      <img src= "http://placehold.it/250x500/ffffff&text=250+x+500+...+PROJECT+IMAGE" width= "250" height= "500"/>	     
+	    <div class="profile span4 offset2" width= "250" height= "500"  >
+	      <%= image_tag @project.project_pic_large.url %>	     
 	    </div>
 		
-		<div class="profile span6" >
-	      <img src="http://placehold.it/500x500/ffffff&text=350+x+500+...+specific+project+info+text+box" alt="" />
+		<div class="profile span6" width= "350" height= "500">
+	      <%=raw simple_format(@project.project_detail) %>	     
 	    </div>
 		  
 	</div>
