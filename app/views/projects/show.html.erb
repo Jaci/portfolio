@@ -41,12 +41,6 @@
 							<%= link_to 'See Project Details', project %>	
 					    </div>		  
 					</div>
-				  <tr>
-				    <td></td><br>
-				    <td><%= link_to 'Edit', edit_project_path(project) %></td><br>
-				    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td><br>
-				  </tr>
+			
 				<% end %>
-
-			<%= link_to 'Edit', edit_project_path(@project) %> |
-			<%= link_to 'Back', projects_path %>
+			<%= link_to 'Back to All Projects', projects_path %>
