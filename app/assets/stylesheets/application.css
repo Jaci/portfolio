@@ -580,14 +580,31 @@ ol ul {
   margin-bottom: 0;
 }
 ul {
-  list-style: disc;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #000000;
+  text-rendering: optimizeLegibility;
 }
 ol {
-  list-style: decimal;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #000000;
+  text-rendering: optimizeLegibility;
 }
 li {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
   line-height: 18px;
-  color: #808080;
+  color: #000000;
+  text-rendering: optimizeLegibility;
 }
 ul.unstyled {
   list-style: none;
