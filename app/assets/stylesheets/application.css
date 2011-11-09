@@ -208,7 +208,7 @@ aside {
 .row .span8 {
   float: left;
   width: 460px;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 .row .span8:first-child {
   margin-left: 0;
