@@ -12,7 +12,7 @@ margin: 0px 0px 0px 0px;
 			<% @goals.each do |goal| %>
 			<div class= "row">								
 			<div class="span9 offset3">
-		    	<h1><%= goal.goal_header %></h1>
+		    	<h3><%= goal.goal_header %></h3>
 			    		<br>
 					<h3><%= raw simple_format(goal.goal) %></h3>
 			</div>
