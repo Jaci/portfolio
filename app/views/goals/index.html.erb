@@ -1,19 +1,4 @@
-<style type= "text/css">
-.span9 {
-background-color:#ffffff;
-margin: 0px 0px 0px 0px;
-}
-ul li: {
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 18px;
-  color: #808080;
-  text-rendering: optimizeLegibility;
-}
 
-</style>
 
 		<div class ="container">
 			<br>
@@ -23,7 +8,7 @@ ul li: {
 			<div class="span9 offset3">
 		    	<h3><%= goal.goal_header %></h3>
 			    		<br>
-					<h3><%= raw simple_format(goal.goal) %></h3>
+					<%= raw simple_format(goal.goal) %>
 			</div>
 			</div>
 		<br>
