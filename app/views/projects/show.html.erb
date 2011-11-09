@@ -7,7 +7,7 @@
 	 		 <div class="profile span3 offset2" width= "250" height= "500" >
 				<%= image_tag @project.avatar(:large) %> </p>
 			    </div>
-				<div class="profile span8" width= "500" height= "200" >
+				<div class="profile span6 offset5" width= "500" height= "200" >
 					<%= raw simple_format(@project.project_detail) %>  
 					<br>
 					<%= link_to 'Back to All Projects', projects_path %>
