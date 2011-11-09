@@ -13,14 +13,14 @@ margin: 0px 0px 0px 0px;
 			<div class= "row">								
 			<div class="span9 offset3">
 		    	<h1><%= goal.goal_header %></h1>
-					<!-- <table>
-					<tr>
-		    			<td><%= link_to 'Show', goal %></td>
-		    			<td><%= link_to 'Edit', edit_goal_path(goal) %></td>
-		    			<td><%= link_to 'Destroy', goal, confirm: 'Are you sure?', :method => 'destroy' %></td>
-		  			</tr>
-					</table> -->		
-	    		<br>
+					<table>
+						<tr>
+			    			<td><%= link_to 'Show', goal %></td>
+			    			<td><%= link_to 'Edit', edit_goal_path(goal) %></td>
+			    			<td><%= link_to 'Destroy', goal, confirm: 'Are you sure?', :method => 'destroy' %></td>
+			  			</tr>
+						</table>		
+		    		<br>
 					<h3><%= raw simple_format(goal.goal) %></h3>
 			</div>
 			</div>

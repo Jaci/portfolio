@@ -4,15 +4,37 @@
 		<div class="row">
 			<br>
 			<br>
-	    <div class="profile span4 offset2" width= "250" height= "500"  >
-	    </div>
-		
-		<div class="profile span6" width= "350" height= "500">
-	      <%=raw simple_format(@project.project_detail) %>	     
-	    </div>
-		  
-	</div>
-	</div>
+	 		 <div class="profile span3 offset2" width= "250" height= "500" >
+				<%= image_tag @project.avatar(:large) %> </p>
+			    </div>
+				<div class="profile span8" width= "500" height= "200" >
+					<%= raw simple_format(@project.project_detail) %>  
+					<br>
+					<%= link_to 'Back to All Projects', projects_path %>
+			    </div>
+			</div>
+	
+				<% Project.all.each do |project| %>
+				<% next if project == @project %> 
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+				<p id="notice"><%= notice %></p>
+						<div class="row">
+							<br>
+					    <div class="profile span3 offset2" width= "170" height= "200" >
+						<%= image_tag project.avatar(:small) %> </p>
+					    </div>
+						<div class="profile span8" width= "500" height= "200" >
+							<%= raw simple_format(project.project_summary) %>  
+							<br>
+							<%= link_to 'See Project Details', project %>	
+					    </div>		  
+					</div>
+				  <tr>
+				    <td></td><br>
+				    <td><%= link_to 'Edit', edit_project_path(project) %></td><br>
+				    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td><br>
+				  </tr>
+				<% end %>
+
+			<%= link_to 'Edit', edit_project_path(@project) %> |
+			<%= link_to 'Back', projects_path %>
