@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   def resume_page
   end
   
-  def future_resume_page
+  def future_resume
   end
   
   def contact_page
