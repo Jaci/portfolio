@@ -1,23 +1,24 @@
 
 <div class ="container">
-	<h1>Resources and Links</h1>
-	
-	<% @blogs.each do |blog| %>
-	
+
 		<div class="row">
 			<br>
 			<br>
-	 		 <div class="profile span3 offset2" width= "250" height= "500" >
-				<%= blog.post_title %> </p>
+	 		 <div class="profile span6 offset2" width= "250" height= "500" >
+				<br>
+				<h1>Resources and Links</h1>
+						<br><br>
+			   <h4>	<a href="http://www.ischool.utexas.edu"> UT iShoool</a></h4>
+			   <h4>	<a href="http://www.ci.austin.tx.us/library"> Austin Public Library </a></h4>
+			   <h4>	<a href="http://www.sheshunoff.com"> Sheshunoff Information Services </a></h4>
+			   <h4>	<a href="http://www.davidccook.com/index.cfm"> David C Cook </a></h4>
+			   <h4>	<a href="http://www.ithealthboard.health.nz/connectedhealth"> New Zealand’s Connected Health Project </a></h4>
+			   <h4>	<a href="http://www.acuoptimist.com/"> The Optimist newspaper</a></h4>
+			   <h4>	<a href="http://www.mailtribune.com/"> The Mail Tribune newspaper</a></h4>
+			
 			    </div>
 				<div class="profile span6 offset5" width= "500" height= "200" >
-					<%= blog.text %> %>  
 					<br>
 			    </div>
 			</div>
-    <%= link_to 'Edit', edit_blog_path(blog) %>
-<% end %>
-
-<br />
-
-<%= link_to 'New Link', new_blog_path %>
+ 

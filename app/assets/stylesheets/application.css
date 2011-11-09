@@ -1307,6 +1307,8 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 }
 .topbar ul li.active a {
   background-color: none;
+  color: #ffffff;
+
 }
 .topbar ul.primary-nav li ul {
   left: 0;
