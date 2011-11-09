@@ -1,27 +1,23 @@
-<h1>Listing blogs</h1>
 
-<table>
-  <tr>
-    <th>Post title</th>
-    <th>Created on</th>
-    <th>Text</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @blogs.each do |blog| %>
-  <tr>
-    <td><%= blog.post_title %></td>
-    <td><%= blog.created_on %></td>
-    <td><%= blog.text %></td>
-    <td><%= link_to 'Show', blog %></td>
-    <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-    <td><%= link_to 'Destroy', blog, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+<div class ="container">
+	<h1>Resources and Links</h1>
+	
+	<% @blogs.each do |blog| %>
+	
+		<div class="row">
+			<br>
+			<br>
+	 		 <div class="profile span3 offset2" width= "250" height= "500" >
+				<%= blog.post_title %> </p>
+			    </div>
+				<div class="profile span6 offset5" width= "500" height= "200" >
+					<%= blog.text %> %>  
+					<br>
+			    </div>
+			</div>
+    <%= link_to 'Edit', edit_blog_path(blog) %>
 <% end %>
-</table>
 
 <br />
 
-<%= link_to 'New Blog', new_blog_path %>
+<%= link_to 'New Link', new_blog_path %>
