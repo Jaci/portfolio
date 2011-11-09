@@ -585,7 +585,7 @@ ul {
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
-  color: #000000;
+  color: #808080;
   text-rendering: optimizeLegibility;
 }
 ol {
@@ -594,7 +594,7 @@ ol {
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
-  color: #000000;
+  color: #808080;
   text-rendering: optimizeLegibility;
 }
 li {
@@ -603,7 +603,7 @@ li {
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
-  color: #000000;
+  color: #808080;
   text-rendering: optimizeLegibility;
 }
 ul.unstyled {
