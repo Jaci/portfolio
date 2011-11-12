@@ -1292,14 +1292,14 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 .topbar ul {
   display: block;
   float: left;
-  margin: 0 10px 0 20%;
+  margin: 0 10px 0 25%;
   position: absolute;
 }
 .topbar ul.secondary-nav {
   float: right;
   margin: 10px;
   display: block;
-  margin: 0 95px 0 0;
+  margin: 0 15% 0 0;
   position: relative;
 
 }
