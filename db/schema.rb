@@ -11,17 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120215235715) do
+ActiveRecord::Schema.define(:version => 20120216181409) do
 
   create_table "blogs", :force => true do |t|
     t.string   "post_title"
     t.datetime "created_on"
-    t.string   "text"
+    t.text     "text",       :limit => 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "avatar_file_name"
-    t.string   "avatar_file_type"
-    t.string   "avatar_file_size"
   end
 
   create_table "experiences", :force => true do |t|
