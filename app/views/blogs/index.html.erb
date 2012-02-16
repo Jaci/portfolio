@@ -1,24 +1,18 @@
 
-<div class ="container">
 
-		<div class="row">
+		<div class ="container">
 			<br>
 			<br>
-	 		 <div class="profile span6 offset2" width= "250" height= "500" >
-				<br>
-				<h3>Resources and Links</h3>
-						<br><br>
-			   <h6>	<a href="http://www.ischool.utexas.edu"> UT iSchool</a></h6>
-			   <h6>	<a href="http://www.ci.austin.tx.us/library"> Austin Public Library </a></h6>
-			   <h6>	<a href="http://www.sheshunoff.com"> Sheshunoff Information Services </a></h6>
-			   <h6>	<a href="http://www.davidccook.com/index.cfm"> David C Cook </a></h6>
-			   <h6>	<a href="http://www.ithealthboard.health.nz/connectedhealth"> New Zealand’s Connected Health Project </a></h6>
-			   <h6>	<a href="http://www.acuoptimist.com/"> The Optimist newspaper</a></h6>
-			   <h6>	<a href="http://www.mailtribune.com/"> The Mail Tribune newspaper</a></h6>
-			
-			    </div>
-				<div class="profile span6 offset5" width= "500" height= "200" >
-					<br>
-			    </div>
+			<% blogs.each do |goal| %>
+			<div class= "row">								
+			<div class="span9 offset3">
+		    	<h3><%= blog.post_title %></h3>
+			    		<br>
+					<%= raw simple_format(blog.text) %>
 			</div>
- 
+			</div>
+		<br>
+<% end %>
+<br>
+</div>
+</div>
