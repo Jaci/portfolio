@@ -12,6 +12,7 @@ Portfolio::Application.routes.draw do
     match "resume_page" => "pages#resume_page"
     match "contact_page" => "pages#contact_page"
     match "future_resume" => "pages#future_resume"
+    match "blog_page" => redirect("http://jacish.wordpress.com/"), :as => :blog_page
 
   resources :resume
 
